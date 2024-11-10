@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<HEAD>
+    <title>
+        Prva pomoc
+    </title>
+</HEAD>
+<style>
+    * { 
+        padding: 0;
+        margin: 0;
+        font-family: monospace;
+    
+    }
+    ul {
+        list-style: none;
+        background: #7c0808;
+    }
+    ul li {
+        display: inline-block;
+        position: relative;
+    }
+    ul li a {
+        display: block;
+        padding: 20px 25px;
+        color: #fff;
+        text-decoration: none;
+        text-align: center;
+        font-size: 20px;
+    }
+    ul li ul.dropdown li {
+        display: block;
+    }
+    ul li ul.dropdown {
+        background: #7c0808;
+        position: absolute;
+        z-index: 999;
+        display: none;
+    }
+    ul li a:hover {
+        background: #890a0a;
+    }
+    ul li:hover ul.dropdown {
+        display:block;
+    }
+    body{
+       background-color: #7c0808;
+
+    }
+    .topright6{
+        position: absolute;
+        top: 0px;
+        right: 0px
+    }
+    .trap{
+            position: relative;
+        }
+        .trap .wrapper{
+            width: 100vw;
+            height: 20vw;
+            box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.6);
+            background: #ddd;
+            margin: 5rem auto;
+            overflow: hidden;
+        }
+        /* ponavlanje animacije */ 
+        .trap .wrapper-holder{
+            display: grid;
+            grid-template-columns: repeat(4, 100%);
+            height: 100%;
+            width: 100%;
+            animation: slider 20s ease-in-out infinite alternate;
+          
+        }
+        .trap #slider-img-5{
+            background-image: url(slider-img-5.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            width: 100%;
+            height: 100%;
+         
+        }
+        .trap #slider-img-6{
+            background-image: url(slider-img-6.png);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+          
+            background-size: 100%;
+        }
+        .trap #slider-img-7{
+            background-image: url(slider-img-7.png);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+           background-size: 100%;
+        }
+        .trap #slider-img-8{
+            background-image: url(slider-img-8.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+      
+        }
+        /*male tacke na slideru*/
+        .trap .button-holder .button{
+            background-color: white;
+            width: 15px;
+            height: 15px;
+            border-radius: 15px;
+            display: inline-block;
+            margin: .3rem;
+        }
+        /* pozicija tacki */
+        .trap .button-holder{
+            position: absolute;
+            left: 49% ;
+            bottom: 13%;
+        }
+        /*boja howera */
+        .button:hover{
+            box-shadow: 0px 0px 7px 4px rgba(0, 0, 0, 0.6);
+        }
+        @keyframes slider{
+            0%{transform:translateX(0%) ;}
+            10%{transform:translateX(-100%) ;}
+            20%{transform:translateX(-100%) ;}
+            30%{transform:translateX(-200%) ;}
+            40%{transform:translateX(-200%) ;}
+            50%{transform:translateX(-200%) ;}
+            60%{transform:translateX(-300%) ;}
+            70%{transform:translateX(-300%) ;}
+            80%{transform:translateX(-300%) ;}
+            90%{transform:translateX(0%) ;}
+            100%{transform:translateX(0%) ;}
+        }
+
+</style>
+<body>
+    <ul>
+        <li><a href="#"> Pocetak</a></li>
+        <li>
+            <a href="#"> Novosti</a>
+            <ul class="dropdown">
+                <LI> <a href="#">Nesto</a></LI>
+                <li> <a href="#"> Tekst</a></li>
+                <li> <a href="#"> Nesto</a></li>
+                <li> <a href="#"> Nesto</a></li>
+                </ul>
+</li>
+<LI> <a href="#"> Kontakt </a></LI>
+<LI> <a href="#"> Pitanja  </a></LI>
+</ul>
+    <div class="trap">
+        <div class="wrapper">
+            <div class="wrapper-holder">
+                <div id="slider-img-5"></div>
+                <div id="slider-img-6"></div>
+                <div id="slider-img-7"></div>
+                <div id="slider-img-8"></div>
+            </div>
+        </div>
+        <div class="button-holder">
+           
+            <a href="slider-img-5.jpg" class="button"></a>
+            <a href="slider-img-6.png" class="button"></a>
+            <a href="slider-img-7.png" class="button"></a>
+            <a href="slider-img-8.jpg" class="button"></a>
+            
+        </div>
+    </div>
+</body>
+</html>
