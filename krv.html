@@ -1,0 +1,188 @@
+<html lang="sr"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crveni Krst - Prva Pomoć</title>
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f1f8e9;
+            color: #004d40;
+            margin: 0;
+            padding: 0;
+            background-image: url('pozadina.jpg'); /* Pozadina koju trebaš dodati */
+            background-size: cover;
+            background-position: center;
+           
+        }
+        header {
+            background-color: #971b1b;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #b71c1c;
+        }
+        nav a {
+            color: white;
+            padding: 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        nav a:hover {
+            background-color: #9c0a0a;
+        }
+        .container {
+            padding: 20px;
+        }
+        .section-title {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        footer {
+            background-color: #b71c1c;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+           
+        }
+        .content-box {
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-top: 20px;
+        }
+        .highlight {
+            color: #d32f2f;
+            font-weight: bold;
+        }
+        .quiz-container {
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-top: 20px;
+        }
+        .quiz-question {
+            margin-bottom: 10px;
+        }
+        .donation-btn, .blood-donation-btn {
+            background-color: #d32f2f;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+        .donation-btn:hover, .blood-donation-btn:hover {
+            background-color: #9c0a0a;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Dobrodošli na stranicu Crvenog Krsta</h1>
+</header>
+
+<nav>
+    <a href="#home">Početna Stranica</a>
+    <a href="#approach">Pristup Osobi</a>
+    <a href="#injuries">Vrste Povreda</a>
+    <a href="#tips">Saveti</a>
+    <a href="#quiz">Kviz</a>
+    <a href="#donation">Donacija za Krv</a>
+</nav>
+
+<div class="container" id="home">
+    <h2 class="section-title">Šta je Crveni Krst?</h2>
+    <p>Crveni Krst je humanitarna organizacija koja pruža pomoć u hitnim slučajevima, obučava ljude za pružanje prve pomoći i pomaže u prevenciji nesreća.</p>
+</div>
+
+<div class="container" id="approach">
+    <h2 class="section-title">Kako Prići Osobi u Potrebi?</h2>
+    <div class="content-box">
+        <p>Pristupanje osobi u potrebi mora biti pažljivo, smireno i efikasno. <span class="highlight">Neka ključna pravila:</span></p>
+        <p><strong>Prvo:</strong> Proceni situaciju i okolinu, proveri da li je bezbedno prići.</p>
+        <p><strong>Drugi korak:</strong> Pristupite osobi polako, sa smirenim tonom.</p>
+        <p><strong>Treći korak:</strong> Ustanovite da li je osoba pri svesti, da li diše, i da li je povređena.</p>
+    </div>
+</div>
+
+<div class="container" id="injuries">
+    <h2 class="section-title">Vrste Povreda</h2>
+    <div class="content-box">
+        <p>Različite povrede zahtevaju različite postupke. <span class="highlight">Evo nekoliko najčešćih povreda:</span></p>
+        <ul>
+            <li><strong>Opekotine:</strong> Opekotine od vatre, hemikalija, ili sunčevih zraka.</li>
+            <li><strong>Frakture:</strong> Lomača kostiju izazvana padom ili udarcem.</li>
+            <li><strong>Respiratorni problemi:</strong> Problemi sa disanjem koji mogu biti izazvani gušenjem ili povredama disajnih puteva.</li>
+        </ul>
+    </div>
+</div>
+
+<div class="container" id="quiz">
+    <h2 class="section-title">Kviz o Crvenom Krstu</h2>
+    <div class="quiz-container">
+        <p>Proverite svoje znanje o Crvenom Krstu pre nego što krenete sa učenjem.</p>
+        <form id="quizForm">
+            <div class="quiz-question">
+                <label for="q1">1. Koja je osnovna misija Crvenog Krsta?</label>
+                <input type="text" id="q1" name="q1" required="">
+            </div>
+            <div class="quiz-question">
+                <label for="q2">2. Kada je osnovan Crveni Krst?</label>
+                <input type="text" id="q2" name="q2" required="">
+            </div>
+            <!-- Dodajte još pitanja ovde -->
+            <button type="submit">Pošaljite odgovore</button>
+        </form>
+    </div>
+</div>
+
+<div class="container" id="donation">
+    <h2 class="section-title">Donacija za Krv</h2>
+    <div class="content-box">
+        <p>Pomozite onima kojima je najpotrebnija! Pridružite se akciji davanja krvi.</p>
+        <button class="blood-donation-btn">Prijavite se za donaciju krvi</button>
+    </div>
+</div>
+
+<div class="container" id="tips">
+    <h2 class="section-title">Zanimljive i Korisne Stvari</h2>
+    <div class="content-box">
+        <p>Ovdje možete dodati razne savete o tome kako unaprediti svoje sposobnosti u pružanju prve pomoći, kao i informacije o tome kako pomoći u različitim situacijama.</p>
+    </div>
+</div>
+<footer>
+    <p>Crveni Krst - Pomozimo Zajedno © 2024</p>
+</footer>
+
+<script>
+    // Kviz submit funkcionalnost
+    document.getElementById('quizForm').addEventListener('submit', function(e) {
+        e.preventDefault();
+        
+        var formData = new FormData(this);
+        var results = '';
+        formData.forEach((value, key) => {
+            results += key + ": " + value + "\n";
+        });
+        alert("Vaši odgovori su poslati:\n" + results);
+    });
+</script>
+
+
+</body></html>
